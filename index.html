@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="css/css.style" />
+  </head>
+  <body>
+    <h1>JavaScript Assignment</h1>
+
+    <p id="checker"></p>
+    <script>
+      function checkAge(age) {
+        if (age >= 18) {
+          return "You are an adult.";
+        } else if (age >= 13) {
+          return "You are a teenager.";
+        } else {
+          return "You are a child.";
+        }
+      }
+      document.getElementById("checker").innerHTML =
+        checkAge(20) + "<br>" + checkAge(17) + "<br>" + checkAge(12);
+      +"<br>";
+
+      // document.getElementById("checker").innerHTML= checkAge(17);
+      // document.getElementById("checker").innerHTML= checkAge(12);
+    </script>
+  </body>
+</html>
